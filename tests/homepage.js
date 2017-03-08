@@ -7,15 +7,17 @@ module.exports = {
     },
     'Search for bikini' : function(browser){
       let searchquery = 'bikini';
-
       let asos = browser.page.asoshomepage();
-     asos.navigate()
-     .setValue('@searchBox', searchquery)
-     .click('@submit')
-     .waitForElementVisible('@searchresult', 3000)
-     .assert.visible('@searchresult')
-     .assert.urlContains(searchquery)
-      browser.end(); //closes browser
+     asos.navigate().search(searchquery)
+     .waitForElementVisible('@searchresult', 2000)
+     asos.assert.visible('@searchresult')
+     asos.assert.urlContains(searchquery)
+    },
+    'Add item to basket and checkout' : function(browser){
+      let searchquery = 'bikini';
+      let asos = browser.page.asoshomepage();
+      asos.navigate().setValue('@searchBox', searchquery).submit().add()
+      browser.end(); //closes browser 
     }
 };
     
