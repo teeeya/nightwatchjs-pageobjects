@@ -1,0 +1,28 @@
+{
+  "name": "nightwatchjs-pageobjects",
+  "version": "1.0.0",
+  "description": "Nightwatchjs tests using pageobjects design pattern for asos.com",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/teeeya/nightwatchjs-pageobjects.git"
+  },
+  "keywords": [
+    "automation",
+    "tests",
+    "nightwatch",
+    "js"
+  ],
+  "author": "Tiya Chowdhury",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/teeeya/nightwatchjs-pageobjects/issues"
+  },
+  "homepage": "https://github.com/teeeya/nightwatchjs-pageobjects#readme",
+  "dependencies": {
+    "nightwatch": "^0.9.12"
+  }
+}
